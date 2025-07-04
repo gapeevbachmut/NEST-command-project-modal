@@ -1,0 +1,71 @@
+.hidden {
+    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.modal-backdrop {
+    min-width: 320px;
+    max-width: 375px;
+    padding: 32px 16px;
+    margin: 0 auto;
+
+
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: #fff;
+    padding: 2rem;
+    position: relative;
+    max-width: 600px;
+    width: 90%;
+    border-radius: 10px;
+    overflow-y: auto;
+    max-height: 90vh;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    /* color: black; */
+    /* fill: black; */
+    /* stroke: black; */
+}
+
+.modal-close-icon {
+    /* color: black; */
+    /* fill: black; */
+    /* stroke: black; */
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.accordion .accordion-body {
+    display: none;
+}
+
+.accordion .accordion-body.active {
+    display: block;
+}

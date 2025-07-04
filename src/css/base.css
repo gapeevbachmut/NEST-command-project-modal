@@ -1,0 +1,21 @@
+:root {
+  --main-font: 'Rubik', sans-serif;
+  --main-font-weight: 400;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  font-family: var(--main-font);
+  font-weight: var(--main-font-weight);
+}
+
+main {
+  flex-grow: 1;
+}
+main:has(.back-link) {
+  text-align: center;
+}
