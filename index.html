@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/NEST-command-project-modal/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet" />
+  <title>Booksy - TEST-command-project-modal</title>
+  <script type="module" crossorigin src="/NEST-command-project-modal/index.js"></script>
+  <link rel="stylesheet" crossorigin href="/NEST-command-project-modal/assets/index-BDqOKC0k.css">
+</head>
+
+<body>
+  
+  <main>
+    <h1>TEST-command-project-modal</h1>
+    <!-- Loads the specified .html file -->
+    <h2>Lorem ipsum, dolor sit </h2>
+<button type="button" id="TEST-open-modal-btn"> Modal Window</button>
+<p>amet consectetur adipisicing elit. Atque, numquam delectus cumque maxime nemo ex blanditiis
+    adipisci hic sit alias minima. Perspiciatis, nisi officia, libero totam eligendi aut doloremque rerum ipsum ullam
+    neque inventore officiis sed vitae soluta ex suscipit consectetur unde fuga quam dicta reprehenderit corrupti illum
+    nemo tempore? Enim impedit exercitationem alias nostrum inventore tempore consectetur qui eum velit ipsam harum
+    numqoluptates voluptatibus alias magni velit accusamus reiciendis sunt, odio qui sed odit harum officia mollitia
+    minus quae, debitis, nostrum iusto architecto natus doloribus cum culpa. Asperiores aperiam quae, commodi totam
+    omnis assumenda vel dolores animi expedita voluptatum itaque repellat excepturi sapiente voluptate velit
+    repudiandaemo tempore? Enim impedit exercitationem alias nostrum inventore tempore consectetur qui eum velit ipsam
+    harum
+    numqoluptates voluptatibus alias magni velit accusamus reiciendis sunt, odio qui sed odit harum officia mollitia
+    minus quae, debitis, nostrum iusto architecto natus doloribus cum culpa. Asperiores aperiam quae, commodi totam
+    omnis assumenda vel dolores animi expedita voluptatum itaque repellat excepturi sapiente voluptate velit
+    repudiandaemo tempore? Enim impedit exercitationem alias nostrum inventore tempore consectetur qui eum velit ipsam
+    harum
+    numqoluptates voluptatibus alias magni velit accusamus reiciendis sunt, odio qui sed odit harum officia mollitia
+    minus quae, debitis, nostrum iusto architecto natus doloribus cum culpa. Asperiores aperiam quae, commodi totam
+    omnis assumenda vel dolores animi expedita voluptatum itaque repellat excepturi sapiente voluptate velit
+    repudiandaemo tempore? Enim impedit exercitationem alias nostrum inventore tempore consectetur qui eum velit ipsam
+    harum
+    numqoluptates voluptatibus alias magni velit accusamus reiciendis sunt, odio qui sed odit harum officia mollitia
+    minus quae, debitis, nostrum iusto architecto natus doloribus cum culpa. Asperiores aperiam quae, commodi totam
+    omnis assumenda vel dolores animi expedita voluptatum itaque repellat excepturi sapiente voluptate velit
+    repudiandaemo tempore? Enim impedit exercitationem alias nostrum inventore tempore consectetur qui eum velit ipsam
+    harum
+    numqoluptates voluptatibus alias magni velit accusamus reiciendis sunt, odio qui sed odit harum officia mollitia
+    minus quae, debitis, nostrum iusto architecto natus doloribus cum culpa. Asperiores aperiam quae, commodi totam
+    omnis assumenda vel dolores animi expedita voluptatum itaque repellat excepturi sapiente voluptate velit repudiandae
+    soluta facere mo tempore? Enim impedit exercitationem alias nostrum inventore tempore consectetur qui eum velit
+    ipsam harum
+    numqoluptates voluptatibus alias magni velit accusamus reiciendis sunt, odio qui sed odit harum officia mollitia
+    minus quae, debitis, nostrum iusto architecto natus doloribus cum culpa. Asperiores aperiam quae, commodi totam
+    omnis assumenda vel dolores animi expedita voluptatum itaque repellat excepturi sapiente voluptate velit
+    repudiandae.</p>
+    
+    
+    
+    
+    
+  </main>
+
+  
+  <!-- Backdrop -->
+<div class="modal-backdrop container hidden" id="modalBackdrop">
+    <!-- Modal -->
+    <div class="modal" id="bookModal">
+        <button class="modal-close" id="modalCloseBtn">
+
+            <svg class="modal-close-icon" width="24" height="24">
+                <!-- <use href=" ../img/sprite.svg/#icon-close"></use> -->
+                <path fill="#000"
+                    d="M14.348 5.652a1 1 0 00-1.414 0L10 8.586 7.066 5.652a1 1 0 10-1.414 1.414L8.586 10l-2.934 2.934a1 1 0 101.414 1.414L10 11.414l2.934 2.934a1 1 0 001.414-1.414L11.414 10l2.934-2.934a1 1 0 000-1.414z" />
+
+            </svg>
+        </button>
+
+        <div class="modal-content">
+            <img id="bookImage" alt="book" />
+            <h2 id="bookTitle">Title</h2>
+            <p id="bookAuthor">Author</p>
+            <p id="bookPrice">$0.00</p>
+
+            <div class="quantity-control">
+                <button id="decrease">-</button>
+                <input type="number" id="quantity" value="1" min="1" />
+                <button id="increase">+</button>
+            </div>
+
+            <form id="buyForm">
+                <button type="button" id="addToCart">Add to Cart</button>
+                <button type="submit">Buy Now</button>
+            </form>
+
+            <div class="accordion" id="accordionContainer">
+                <div class="accordion-item">
+                    <button class="accordion-header">Details</button>
+                    <div class="accordion-body" id="bookDetails"></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Shipping</button>
+                    <div class="accordion-body" id="bookShipping"></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Returns</button>
+                    <div class="accordion-body" id="bookReturns"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
