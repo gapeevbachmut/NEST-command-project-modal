@@ -1,3 +1,22 @@
+/* #region mobile */
+
+/* mobile */
+.modal-backdrop {
+    min-width: 320px;
+    max-width: 375px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* mobile 2 */
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    .modal-backdrop {
+        width: 100vh;
+    }
+}
+
+
+
 .hidden {
     display: none;
     position: absolute;
@@ -18,7 +37,7 @@
     max-width: 100vh;
     padding: 32px 16px;
     position: fixed;
-    inset: 0;
+    /* inset: 0; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +48,7 @@
     background-color: #fceee6;
     border-radius: 16px;
     padding: 64px 16px;
-    width: 343px;
+    max-width: 343px;
     position: relative;
     /* ??? */
     max-height: 90vh;
@@ -41,15 +60,11 @@
     right: 10px;
     background: transparent;
     border: none;
-    /* color: black; */
     fill: #0b0500;
-    /* stroke: black; */
 }
 
 .modal-close-icon {
-    /* color: black; */
-    fill: #0b0500;
-    /* stroke: black; */
+    /* fill: #0b0500; */
 }
 
 .quantity-control {
@@ -167,4 +182,21 @@
     border-top: 1px solid rgba(11, 5, 0, 0.15);
     width: 311px;
     margin-top: 32px;
+}
+
+/* #endregion */
+
+/* #region tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .modal-backdrop {
+        min-width: 768px;
+        max-width: 1439px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .modal-backdrop {
+        min-width: 1440px;
+    }
 }
