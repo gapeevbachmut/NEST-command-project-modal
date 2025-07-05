@@ -4,42 +4,60 @@
     <div class="modal" id="bookModal">
         <button class="modal-close" id="modalCloseBtn">
 
-            <svg class="modal-close-icon" width="24" height="24">
-                <!-- <use href=" ../img/sprite.svg/#icon-close"></use> -->
-                <path fill="#000"
-                    d="M14.348 5.652a1 1 0 00-1.414 0L10 8.586 7.066 5.652a1 1 0 10-1.414 1.414L8.586 10l-2.934 2.934a1 1 0 101.414 1.414L10 11.414l2.934 2.934a1 1 0 001.414-1.414L11.414 10l2.934-2.934a1 1 0 000-1.414z" />
-
+            <svg class="modal-close-icon" width="14" height="14">
+                <use href="../img/sprite.svg#icon-close"></use>
             </svg>
         </button>
 
         <div class="modal-content">
             <img id="bookImage" alt="book" />
-            <h2 id="bookTitle">Title</h2>
-            <p id="bookAuthor">Author</p>
-            <p id="bookPrice">$0.00</p>
+            <h2 class="book-title" id="bookTitle">Title</h2>
+            <p class="book-author" id="bookAuthor">Author</p>
+            <p class="book-price" id="bookPrice">$0.00</p>
 
             <div class="quantity-control">
-                <button id="decrease">-</button>
-                <input type="number" id="quantity" value="1" min="1" />
-                <button id="increase">+</button>
+                <button class="quantity-control-minus" id="decrease"><svg width="8" height="8">
+                        <use href="../img/sprite.svg#icon-minus"></use>
+                    </svg></button>
+
+                <input class="quantity-control-value" id="quantity" value="1" min="1" />
+
+                <!--  ?????  type="number" -->
+
+                <button class="quantity-control-plus" id="increase"><svg width="8" height="8">
+                        <use href="../img/sprite.svg#icon-plus"></use>
+                    </svg></button>
             </div>
 
             <form id="buyForm">
-                <button type="button" id="addToCart">Add to Cart</button>
-                <button type="submit">Buy Now</button>
+                <button class="formBtn-add" type="button" id="addToCart">Add to Cart</button>
+                <button class="formBtn-buy" type="submit">Buy Now</button>
             </form>
+
+            <!-- Повідомлення на сторінці -->
+            <p id="message" style="margin-top:10px; color: green;"></p>
+
 
             <div class="accordion" id="accordionContainer">
                 <div class="accordion-item">
-                    <button class="accordion-header">Details</button>
+                    <button class="accordion-header"><span class="accordion-header-text">Details</span><span
+                            class="accordion-header-icon"><svg width="20" height="14">
+                                <use href='../img/sprite.svg#icon-arrow-down'></use>
+                            </svg></span></button>
                     <div class="accordion-body" id="bookDetails"></div>
                 </div>
                 <div class="accordion-item">
-                    <button class="accordion-header">Shipping</button>
+                    <button class="accordion-header"><span class="accordion-header-text">Shipping</span><span
+                            class="accordion-header-icon"><svg width="20" height="14">
+                                <use href='../img/sprite.svg#icon-arrow-down'></use>
+                            </svg></span></button>
                     <div class="accordion-body" id="bookShipping"></div>
                 </div>
                 <div class="accordion-item">
-                    <button class="accordion-header">Returns</button>
+                    <button class="accordion-header"><span class="accordion-header-text">Returns</span><span
+                            class="accordion-header-icon"><svg width="20" height="14">
+                                <use href='../img/sprite.svg#icon-arrow-down'></use>
+                            </svg></span></button>
                     <div class="accordion-body" id="bookReturns"></div>
                 </div>
             </div>
